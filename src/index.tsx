@@ -4,7 +4,7 @@ import Hello from "./Hello";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider, Query } from "react-apollo";
 import gql from "graphql-tag";
-import Card from "./components/Card";
+import Deck from "./components/Deck";
 
 const client = new ApolloClient({
   uri: "https://api.graph.cool/simple/v1/cjp0db5obl45t01564n7l9jnk"
@@ -58,11 +58,7 @@ const App = () => (
           let blackCards = shuffle(data.blackCards);
           let whiteCards = shuffle(data.whiteCards);
           return (
-            <div>
-              {blackCards.map((card, index: number) => (
-                <Card type="black" {...card} />
-              ))}
-            </div>
+            <Deck cards={blackCards} />
           );
         }}
       </Query>

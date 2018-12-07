@@ -58,7 +58,7 @@ const App = () => (
           let blackCards = shuffle(data.blackCards);
           let whiteCards = shuffle(data.whiteCards);
           return (
-            <Deck cards={blackCards} />
+            <Deck type="black" cards={blackCards} />
           );
         }}
       </Query>

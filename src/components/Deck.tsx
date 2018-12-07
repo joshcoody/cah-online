@@ -32,7 +32,7 @@ class Deck extends React.Component {
 	render() {
 		if (this.state.currentCard) {		
 			return (
-				<Card {...this.state.currentCard} />
+				<Card type={this.props.type} {...this.state.currentCard} />
 			);
 		} else {
 			return "Drawing a card...";

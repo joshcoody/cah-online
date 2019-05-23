@@ -4,7 +4,7 @@ import Hello from "./Hello";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider, Query, QueryResult } from "react-apollo";
 import gql from "graphql-tag";
-import Card, { CardProps } from "./components/Card";
+import { CardProps } from "./components/Card";
 import Deck from "./components/Deck";
 
 const client = new ApolloClient({

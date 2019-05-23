@@ -2,17 +2,14 @@ import * as React from "react";
 
 type CardTypes = "WHITE" | "BLACK";
 
-interface CardInterface {
+export interface CardProps {
   type: CardTypes;
   text: string;
   choices: number;
 }
 
-const styles = {};
-
-const Card = ({ type, text, choices }: CardInterface) => (
+const Card = ({ type, text, choices }: CardProps) => (
   <div className={`card ${type}`}>
-    {type}
     <div className="content">{text}</div>
     <div className="footer">
       <div className="logo" />

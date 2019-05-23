@@ -16,7 +16,8 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "now-dev": "react-scripts start"
   },
   "devDependencies": {
     "@types/graphql": "14.0.3",
